@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+# Simple Exercise de Tic Tac Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet de Tic Tac Toe a été réalisé dans le but de travailler autour de la gestion d'états et d'événements.
 
-Currently, two official plugins are available:
+## Objectifs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Apprendre à gérer l'état d'une application
+- Comprendre et manipuler les événements utilisateur
+- Développer une interface utilisateur réactive
+- Pouvoir enregistrer chaque "coup" et revenir dessus (History)
 
-## Expanding the ESLint configuration
+## Fonctionnalités
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Jouer une partie de Tic Tac Toe entre deux joueurs
+- Afficher l'état actuel du jeu
+- Détecter les conditions de victoire ou de match nul
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Utilisées
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- React , Typescript, Tailwind
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clonez le dépôt :
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+git clone [https://github.com/Rcaradec/TicTacToe.git]
 ```
